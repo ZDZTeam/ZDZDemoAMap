@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    
+    <!-- 定义http请求的rest服务器地址  -->
+	<server url="http://localhost:8080/server/rest" />
+	
+    <!-- 定义自定义视图的映射路径  -->
+	<mapping name="amap" value="com.zdz.map.amap" />
+	
+    <!-- 加载自定义的web调用接口，接口需继承com.zdzsoft.lib.ui.web.ZDZWebInterface -->
+	<interface name="" class="" />
+	
+</config>

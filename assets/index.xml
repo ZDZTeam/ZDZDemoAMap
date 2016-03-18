@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view name="root" type="group/ZDZViewGroup">
+	<view name="map"
+		type="amap:MapView"
+		factory="amap:AMapFactory"
+		source=""
+		layout="group/ZDZParamFull"
+		constraint="margin_top: 64" />
+	<view name="title"
+		type="web/ZDZWebView"
+		source="local:title.html"
+		layout="group/ZDZParamFull"
+		constraint="fill_y:fix; align_y: top; height: 260" />
+</view>

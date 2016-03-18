@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/zdz.css">
+<script type="text/javascript" src="js/zdz.js"></script>
+<script type="text/javascript" src="js/detail.js"></script>
+</head>
+<body class="page_white">
+
+<div class="page">
+	<div class="header">
+		<span class="back"><img id="backBtn" src="images/back.png"/></span>
+		<span class="right"></span>
+		<h1 id="title">详&nbsp;&nbsp;情</h1>
+	</div>
+	<div id="dlist" class="content list">
+		<p></p>
+		<p class="section"><span>详情列表</span></p>
+		<ul>
+			<li class="blank"></li>
+		</ul>
+	</div>
+</div>
+<div class="foot-bar">
+	<div class="line">
+		<button id="bigbtn" class="hroundBtn" type="button">导&nbsp;&nbsp;航</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		<button id="querybtn" class="hroundBtn" type="button">重&nbsp;新&nbsp;查&nbsp;询</button>
+	</div>
+</div>
+<script type="text/x-tmpl" id="tmpl-detail">
+<p class="section"><span>{%=o.key%}列表</span></p>
+<table>
+{% for (var i = 0; i < o.list.length; i++) { %} 
+<tr class="lines">
+<td class="icon_fix" id="icon_{%=i%}">
+	<img id="img_{%=i%}" src="{%=o.list[i].icon%}"/>
+</td>
+<td class="field_large" id="field_{%=i%}">
+	{%=o.list[i].name%}<br/><span class="detail_fix">{%=o.list[i].address%}</span>
+</td>
+<td class="more" id="more_{%=i%}">
+	<img src="images/more.png"/>
+</td>
+</tr>
+{% } %}
+</table>
+<ul><li class="blank"></li><li class="blank"></li></li></ul>
+</script>
+</body>
+</html>
