@@ -17,7 +17,7 @@ import com.amap.api.navi.model.AMapNaviTrafficFacilityInfo;
 import com.amap.api.navi.model.NaviInfo;
 import com.amap.api.navi.model.NaviLatLng;
 import com.autonavi.tbt.TrafficFacilityInfo;
-import com.zdzsoft.lib.ui.caller.ZDZViewCaller;
+import com.zdzsoft.lib.ui.ZDZViewCaller;
 
 /**
  * 高德地图导航

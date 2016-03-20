@@ -2,7 +2,7 @@ package com.zdz.map.system;
 
 import android.os.Bundle;
 
-import com.zdzsoft.lib.ui.activity.ZDZWebLauncher;
+import com.zdzsoft.lib.ui.ZDZWebLauncher;
 import com.zdzsoft.lib.ui.anim.AnimClearBackEvent;
 import com.zdzsoft.lib.ui.anim.ZDZAnim;
 

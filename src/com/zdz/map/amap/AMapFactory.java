@@ -6,7 +6,6 @@ import com.amap.api.maps.MapView;
 import com.amap.api.navi.AMapNaviView;
 import com.amap.api.navi.AMapNaviViewOptions;
 import com.zdzsoft.lib.ui.ZDZUIFactory;
-import com.zdzsoft.lib.ui.activity.ZDZActivity;
 
 import android.content.Context;
 import android.view.View;
@@ -34,7 +33,7 @@ public class AMapFactory implements ZDZUIFactory {
 	 *             创建失败
 	 */
 	@Override
-	public View createView(Context context, String classPath, String source) throws Exception {
+	public View createView(Context context, String classPath, String source) {
 		if (source != null && "navi".equalsIgnoreCase(source.trim())) {
 			return createNaviView(context);
 		}
@@ -53,14 +52,14 @@ public class AMapFactory implements ZDZUIFactory {
 		options.tiltGesturesEnabled(true);
 		options.zoomGesturesEnabled(true);
 		MapView view = new MapView(context, options);
-		view.onCreate(((ZDZActivity) context).getBundle());
+		view.onCreate(null);
 		return view;
 	}
 
 	private View createNaviView(Context context) {
 		AMapNaviViewOptions options = new AMapNaviViewOptions();
 		AMapNaviView view = new AMapNaviView(context, options);
-		view.onCreate(((ZDZActivity) context).getBundle());
+		view.onCreate(null);
 		return view;
 	}
 

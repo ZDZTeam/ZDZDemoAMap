@@ -22,7 +22,7 @@ import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.poisearch.PoiResult;
 import com.amap.api.services.poisearch.PoiSearch;
 import com.amap.api.services.poisearch.PoiSearch.SearchBound;
-import com.zdzsoft.lib.ui.caller.ZDZViewCaller;
+import com.zdzsoft.lib.ui.ZDZViewCaller;
 
 /**
  * 高德地图代理类

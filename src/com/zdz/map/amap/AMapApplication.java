@@ -4,7 +4,7 @@ import android.os.RemoteException;
 import android.util.Log;
 
 import com.amap.api.maps.MapsInitializer;
-import com.zdzsoft.lib.ui.activity.ZDZApplication;
+import com.zdzsoft.lib.ui.ZDZApplication;
 
 /**
  * 高德地图初始化 Application
