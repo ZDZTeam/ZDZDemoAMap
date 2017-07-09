@@ -11,4 +11,4 @@ gaode.docx<br/>
 ZDZDemoAMap.apk<br/>
 
 # 官网地址
-http://www.zdzsoft.com/case/gaode.htm<br/>
+http://www.zdzsoft.com/open/open.html<br/>
